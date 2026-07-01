@@ -1,0 +1,544 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 103/103 [00:00<00:00, 2438.00it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 105/105 [00:00<00:00, 2134.39it/s]
+INFO:     Will watch for changes in these directories: ['C:\\RAG-based Document Q&A System\\rag-document-qa\\backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [23012] using WatchFiles
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 103/103 [00:00<00:00, 38032.69it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 105/105 [00:00<00:00, 7694.22it/s]
+INFO:     Started server process [38924]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [38924]
+WARNING:  WatchFiles detected changes in 'rag.py', 'main.py'. Reloading...
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=23012, pipe_handle=1004)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                                  run_name="__mp_main__")
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\main.py", line 10, in <module>
+    from rag import (
+    ...<11 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\rag.py", line 10, in <module>
+    import chromadb
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.api.client import Client as ClientCreator
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\__init__.py", line 1, in <module>
+    from chromadb.api.types import *  # noqa: F401, F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\types.py", line 20, in <module>
+    from numpy.typing import NDArray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__init__.py", line 125, in <module>
+    from numpy.__config__ import show_config
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+    ...<3 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\__init__.py", line 24, in <module>
+    from . import multiarray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\multiarray.py", line 11, in <module>
+    from . import _multiarray_umath, overrides
+  File "<frozen importlib._bootstrap>", line 1349, in _find_and_load
+KeyboardInterrupt
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=23012, pipe_handle=1004)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                                  run_name="__mp_main__")
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\main.py", line 10, in <module>
+    from rag import (
+    ...<11 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\rag.py", line 14, in <module>
+    from sentence_transformers import SentenceTransformer, CrossEncoder
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\sentence_transformers\__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+    ...<3 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\sentence_transformers\backend\__init__.py", line 5, in <module>
+    from .quantize import export_dynamic_quantized_onnx_model, export_static_quantized_openvino_model
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\sentence_transformers\backend\quantize.py", line 7, in <module>
+    from sentence_transformers.util import disable_datasets_caching, is_datasets_available
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\sentence_transformers\util\__init__.py", line 25, in <module>
+    from .retrieval import (
+    ...<5 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\sentence_transformers\util\retrieval.py", line 14, in <module>
+    from .similarity import cos_sim
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\sentence_transformers\util\similarity.py", line 9, in <module>
+    from sklearn.metrics import pairwise_distances
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\sklearn\__init__.py", line 70, in <module>
+    from sklearn.base import clone  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\sklearn\base.py", line 20, in <module>
+    from sklearn.utils._metadata_requests import _MetadataRequester, _routing_enabled
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\sklearn\utils\__init__.py", line 9, in <module>
+    from sklearn.utils._chunking import gen_batches, gen_even_slices
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\sklearn\utils\_chunking.py", line 11, in <module>
+    from sklearn.utils._param_validation import Interval, validate_params
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\sklearn\utils\_param_validation.py", line 17, in <module>
+    from sklearn.utils.validation import _is_arraylike_not_scalar
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\sklearn\utils\validation.py", line 24, in <module>
+    from sklearn.utils._array_api import (
+    ...<6 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\sklearn\utils\_array_api.py", line 16, in <module>
+    import scipy.special as special
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\scipy\special\__init__.py", line 785, in <module>
+    from . import _ufuncs
+  File "scipy/special/_ufuncs.pyx", line 1, in init scipy.special._ufuncs
+  File "<frozen importlib._bootstrap>", line 645, in parent
+KeyboardInterrupt
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 103/103 [00:00<00:00, 3318.05it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 105/105 [00:00<00:00, 1799.31it/s]
+INFO:     Started server process [33044]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [33044]
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=23012, pipe_handle=1512)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                                  run_name="__mp_main__")
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\main.py", line 10, in <module>
+    from rag import (
+    ...<11 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\rag.py", line 10, in <module>
+    import chromadb
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.api.client import Client as ClientCreator
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\__init__.py", line 1, in <module>
+    from chromadb.api.types import *  # noqa: F401, F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\types.py", line 20, in <module>
+    from numpy.typing import NDArray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__init__.py", line 125, in <module>
+    from numpy.__config__ import show_config
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+    ...<3 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\__init__.py", line 24, in <module>
+    from . import multiarray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\multiarray.py", line 11, in <module>
+    from . import _multiarray_umath, overrides
+  File "<frozen importlib._bootstrap>", line 1349, in _find_and_load
+KeyboardInterrupt
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 103/103 [00:00<00:00, 10295.35it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 105/105 [00:00<00:00, 5481.18it/s]
+INFO:     Started server process [35192]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [35192]
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=23012, pipe_handle=1968)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                                  run_name="__mp_main__")
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\main.py", line 10, in <module>
+    from rag import (
+    ...<11 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\rag.py", line 10, in <module>
+    import chromadb
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.api.client import Client as ClientCreator
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\__init__.py", line 1, in <module>
+    from chromadb.api.types import *  # noqa: F401, F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\types.py", line 20, in <module>
+    from numpy.typing import NDArray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__init__.py", line 125, in <module>
+    from numpy.__config__ import show_config
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+    ...<3 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\__init__.py", line 24, in <module>
+    from . import multiarray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\multiarray.py", line 11, in <module>
+    from . import _multiarray_umath, overrides
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\exceptions.py", line 108, in <module>
+    class AxisError(ValueError, IndexError):
+    ...<87 lines>...
+                return msg
+KeyboardInterrupt
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 103/103 [00:00<00:00, 3099.96it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 105/105 [00:00<00:00, 3519.67it/s]
+INFO:     Started server process [29740]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29740]
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=23012, pipe_handle=1780)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                                  run_name="__mp_main__")
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\main.py", line 10, in <module>
+    from rag import (
+    ...<11 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\rag.py", line 10, in <module>
+    import chromadb
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.api.client import Client as ClientCreator
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\__init__.py", line 1, in <module>
+    from chromadb.api.types import *  # noqa: F401, F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\types.py", line 20, in <module>
+    from numpy.typing import NDArray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__init__.py", line 125, in <module>
+    from numpy.__config__ import show_config
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+    ...<3 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\__init__.py", line 24, in <module>
+    from . import multiarray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\multiarray.py", line 11, in <module>
+    from . import _multiarray_umath, overrides
+  File "<frozen importlib._bootstrap>", line 463, in _lock_unlock_module
+KeyboardInterrupt
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 103/103 [00:00<00:00, 3674.80it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 105/105 [00:00<00:00, 2694.78it/s]
+INFO:     Started server process [34708]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [34708]
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=23012, pipe_handle=1780)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                                  run_name="__mp_main__")
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\main.py", line 10, in <module>
+    from rag import (
+    ...<11 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\rag.py", line 10, in <module>
+    import chromadb
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.api.client import Client as ClientCreator
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\__init__.py", line 1, in <module>
+    from chromadb.api.types import *  # noqa: F401, F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\types.py", line 20, in <module>
+    from numpy.typing import NDArray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__init__.py", line 125, in <module>
+    from numpy.__config__ import show_config
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+    ...<3 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\__init__.py", line 24, in <module>
+    from . import multiarray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\multiarray.py", line 11, in <module>
+    from . import _multiarray_umath, overrides
+KeyboardInterrupt
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 103/103 [00:00<00:00, 4294.62it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 105/105 [00:00<00:00, 2928.92it/s]
+INFO:     Started server process [21720]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21720]
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=23012, pipe_handle=1492)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                                  run_name="__mp_main__")
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\main.py", line 10, in <module>
+    from rag import (
+    ...<11 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\rag.py", line 10, in <module>
+    import chromadb
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.api.client import Client as ClientCreator
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\__init__.py", line 1, in <module>
+    from chromadb.api.types import *  # noqa: F401, F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\types.py", line 20, in <module>
+    from numpy.typing import NDArray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__init__.py", line 125, in <module>
+    from numpy.__config__ import show_config
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+    ...<3 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\__init__.py", line 24, in <module>
+    from . import multiarray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\multiarray.py", line 11, in <module>
+    from . import _multiarray_umath, overrides
+  File "<frozen importlib._bootstrap>", line 1349, in _find_and_load
+KeyboardInterrupt
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 103/103 [00:00<00:00, 3662.25it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 105/105 [00:00<00:00, 3904.10it/s]
+INFO:     Started server process [37288]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [37288]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 103/103 [00:00<00:00, 2621.01it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 105/105 [00:00<00:00, 2174.31it/s]
+INFO:     Started server process [39848]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [39848]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 103/103 [00:00<00:00, 2830.09it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 105/105 [00:00<00:00, 2831.00it/s]
+INFO:     Started server process [14920]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14920]
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=23012, pipe_handle=2040)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                                  run_name="__mp_main__")
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\main.py", line 10, in <module>
+    from rag import (
+    ...<11 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\rag.py", line 10, in <module>
+    import chromadb
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.api.client import Client as ClientCreator
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\__init__.py", line 1, in <module>
+    from chromadb.api.types import *  # noqa: F401, F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\types.py", line 20, in <module>
+    from numpy.typing import NDArray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__init__.py", line 125, in <module>
+    from numpy.__config__ import show_config
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+    ...<3 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\__init__.py", line 24, in <module>
+    from . import multiarray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\multiarray.py", line 11, in <module>
+    from . import _multiarray_umath, overrides
+  File "<frozen importlib._bootstrap>", line 1349, in _find_and_load
+KeyboardInterrupt
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 103/103 [00:00<00:00, 2301.93it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 105/105 [00:00<00:00, 2351.78it/s]
+INFO:     Started server process [19672]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19672]
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=23012, pipe_handle=2912)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Varuni\AppData\Local\Programs\Python\Python313\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                                  run_name="__mp_main__")
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\main.py", line 10, in <module>
+    from rag import (
+    ...<11 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\rag.py", line 10, in <module>
+    import chromadb
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\__init__.py", line 6, in <module>
+    from chromadb.api.client import Client as ClientCreator
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\__init__.py", line 1, in <module>
+    from chromadb.api.types import *  # noqa: F401, F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\chromadb\api\types.py", line 20, in <module>
+    from numpy.typing import NDArray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__init__.py", line 125, in <module>
+    from numpy.__config__ import show_config
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+    ...<3 lines>...
+    )
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\__init__.py", line 24, in <module>
+    from . import multiarray
+  File "C:\RAG-based Document Q&A System\rag-document-qa\backend\.venv\Lib\site-packages\numpy\_core\multiarray.py", line 11, in <module>
+    from . import _multiarray_umath, overrides
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1118, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1217, in get_data
+KeyboardInterrupt
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 103/103 [00:00<00:00, 1399.31it/s]
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 105/105 [00:00<00:00, 2048.78it/s]
+INFO:     Started server process [19676]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.

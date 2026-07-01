@@ -1,0 +1,109 @@
+INFO:     127.0.0.1:50374 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50788 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54882 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54884 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64713 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64715 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61890 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57848 - "POST /upload?session_id=1m227rm3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58715 - "GET /documents?session_id=1m227rm3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61752 - "POST /ask/stream HTTP/1.1" 200 OK
+ INFO:     127.0.0.1:63785 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59635 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53172 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49709 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63540 - "GET /models HTTP/1.1" 200 OK
+  INFO:     127.0.0.1:62435 - "POST /upload?session_id=1m227rm3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64864 - "GET /documents?session_id=1m227rm3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64212 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52792 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61552 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52550 - "POST /upload?session_id=1m227rm3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60524 - "GET /documents?session_id=1m227rm3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59824 - "POST /ask/stream HTTP/1.1" 200 OK
+ INFO:     127.0.0.1:62738 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49720 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55295 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56908 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59107 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62054 - "POST /upload?session_id=1m227rm3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49670 - "GET /documents?session_id=1m227rm3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62626 - "POST /ask/stream HTTP/1.1" 200 OK
+  INFO:     127.0.0.1:49250 - "POST /upload?session_id=1m227rm3 HTTP/1.1" 200 OK
+ INFO:     127.0.0.1:52847 - "GET /documents?session_id=1m227rm3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64901 - "POST /ask/stream HTTP/1.1" 200 OK
+ INFO:     127.0.0.1:51245 - "POST /upload?session_id=1m227rm3 HTTP/1.1" 200 OK
+ INFO:     127.0.0.1:54298 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62726 - "GET /documents?session_id=1m227rm3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49857 - "POST /upload?session_id=1m227rm3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58283 - "GET /documents?session_id=1m227rm3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57164 - "POST /ask/stream HTTP/1.1" 200 OK
+  INFO:     127.0.0.1:52421 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64868 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63946 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63944 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62738 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62740 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55372 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55374 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52112 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52114 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57116 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64648 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55139 - "POST /upload?session_id=1m227rm3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57692 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57632 - "POST /ask/stream HTTP/1.1" 200 OK
+ INFO:     127.0.0.1:64733 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62499 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60562 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57996 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62804 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49929 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59907 - "POST /ask/stream HTTP/1.1" 200 OK
+ INFO:     127.0.0.1:58480 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55982 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64866 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64657 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63912 - "GET /models HTTP/1.1" 200 OK
+ INFO:     127.0.0.1:50054 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61835 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55178 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50077 - "POST /ask/stream HTTP/1.1" 200 OK
+ INFO:     127.0.0.1:61506 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65149 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65378 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57564 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56270 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56947 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64074 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52628 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59475 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59321 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55079 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56993 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58167 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63718 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65011 - "POST /ask HTTP/1.1" 200 OK
+  INFO:     127.0.0.1:49200 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49204 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60163 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53354 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60602 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61151 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49677 - "POST /upload?session_id=1m227rm3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55482 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53504 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52098 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60752 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64874 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55202 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59222 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49266 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51639 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57551 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57553 - "GET /models HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50518 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64084 - "POST /ask/stream HTTP/1.1" 200 OK
+ INFO:     127.0.0.1:61039 - "POST /ask/stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63470 - "POST /ask/stream HTTP/1.1" 200 OK
+ 
