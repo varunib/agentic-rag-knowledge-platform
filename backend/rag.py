@@ -33,7 +33,7 @@ AVAILABLE_MODELS = {
     "gemma2-9b-it": "Gemma 2 9B",
 }
 
-DEFAULT_MODEL = "llama-3.1-8b-instant"
+DEFAULT_MODEL = "llama-3.3-70b-versatile"
 
 chroma_client = chromadb.PersistentClient(path="./chroma_data")
 global_collection = chroma_client.get_or_create_collection(name="documents")
@@ -243,6 +243,8 @@ def build_context_with_citations(results, scores: list[int] = None) -> tuple[str
     parts = []
     for i, doc in enumerate(documents):
         meta = metadatas[i] if i < len(metadatas) else {}
+        if not isinstance(meta, dict):
+            meta = {}
         ref_num = i + 1
         confidence = scores[i] if scores and i < len(scores) else None
         parts.append(f"[{ref_num}] {doc}")
@@ -415,9 +417,7 @@ async def answer_question_stream(question: str, session_id: str, model: Optional
         model_name = model or session.get("model", DEFAULT_MODEL)
 
         # Emit retrieval status
-        yield f"data: {json.dumps({'type': 'status', 'message': 'Analyzing question...'})}
-
-"
+        yield f"data: {json.dumps({'type': 'status', 'message': 'Analyzing question...'})}\n\n"
 
         route = decide_query_route(question, bool(session.get("active_file")), model_name)
 
@@ -425,22 +425,16 @@ async def answer_question_stream(question: str, session_id: str, model: Optional
         low_confidence = False
 
         if route == "document" and session.get("active_file"):
-            yield f"data: {json.dumps({'type': 'status', 'message': 'Searching documents...'})}
-
-"
+            yield f"data: {json.dumps({'type': 'status', 'message': 'Searching documents...'})}\n\n"
             docs, metas, ids, scores = await retrieve_chunks(question, session_id, session.get("search_all_docs", False))
             chunks_found = len(docs)
             low_confidence = bool(scores) and max(scores) < 30
             context, citations = build_context_with_citations(
                 {"documents": [docs], "metadatas": [metas], "ids": [ids]}, scores
             ) if docs else ("", [])
-            yield f"data: {json.dumps({'type': 'status', 'message': f'Found {chunks_found} relevant chunks — generating answer...'})}
-
-"
+            yield f"data: {json.dumps({'type': 'status', 'message': f'Found {chunks_found} relevant chunks — generating answer...'})}\n\n"
         else:
-            yield f"data: {json.dumps({'type': 'status', 'message': 'Answering from knowledge base...'})}
-
-"
+            yield f"data: {json.dumps({'type': 'status', 'message': 'Answering from knowledge base...'})}\n\n"
 
         web_results = ""
         if enable_web_search and not context:
@@ -452,9 +446,7 @@ async def answer_question_stream(question: str, session_id: str, model: Optional
         messages.extend(history[-2:])
         messages.append({"role": "user", "content": question})
 
-        yield f"data: {json.dumps({'type': 'metadata', 'citations': citations, 'chunks_found': chunks_found, 'route': route, 'web_search_used': bool(web_results), 'model_used': model_name, 'low_confidence': low_confidence})}
-
-"
+        yield f"data: {json.dumps({'type': 'metadata', 'citations': citations, 'chunks_found': chunks_found, 'route': route, 'web_search_used': bool(web_results), 'model_used': model_name, 'low_confidence': low_confidence})}\n\n"
 
         stream = client.chat.completions.create(
             model=model_name, messages=messages, temperature=0.7, max_tokens=1024, stream=True
@@ -465,21 +457,15 @@ async def answer_question_stream(question: str, session_id: str, model: Optional
             delta = chunk.choices[0].delta.content or ""
             if delta:
                 full_answer += delta
-                yield f"data: {json.dumps({'type': 'chunk', 'content': delta})}
-
-"
+                yield f"data: {json.dumps({'type': 'chunk', 'content': delta})}\n\n"
 
         history.append({"role": "user", "content": question})
         history.append({"role": "assistant", "content": full_answer})
 
-        yield f"data: {json.dumps({'type': 'done'})}
-
-"
+        yield f"data: {json.dumps({'type': 'done'})}\n\n"
 
     except Exception as e:
-        yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}
-
-"
+        yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
 
 # ---------------------------------------------------------------------------
 # Session management

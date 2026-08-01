@@ -1,6 +1,6 @@
 import json
 from typing import Optional
-
+from services.graph_service import run_graph
 from fastapi import FastAPI, UploadFile, File, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
@@ -113,16 +113,19 @@ def delete_document_endpoint(req: DeleteDocRequest):
 @app.post("/ask")
 async def ask_question(req: QuestionRequest):
     try:
-        result = answer_question(
+        result = await run_graph(
             question=req.question,
             session_id=req.session_id,
-            model=req.model,
-            enable_web_search=req.web_search or False,
-            structured=req.structured,
+            model=req.model or "llama-3.3-70b-versatile",
         )
+
         return result
+
     except Exception as e:
-        return {"status": "error", "answer": str(e)}
+        return {
+            "status": "error",
+            "answer": str(e),
+        }
 
 # ---------------------------------------------------------------------------
 # Ask (streaming SSE)

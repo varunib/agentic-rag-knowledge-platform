@@ -1,0 +1,79 @@
+.topbar {
+
+    height: 70px;
+
+    background: #111827;
+
+    border-bottom: 1px solid #1f2937;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 25px;
+
+}
+
+.topbar-title {
+
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+}
+
+.topbar-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+.topbar-actions button {
+
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #1e293b;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+.topbar-actions button:hover {
+
+    background: #334155;
+
+}
+
+.topbar-actions select {
+
+    background: #1e293b;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    cursor: pointer;
+
+}
